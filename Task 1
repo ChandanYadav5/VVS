@@ -1,0 +1,17 @@
+LEDSettings:
+
+// Define LEDSettings structure
+typedef struct {
+    uint8_t state;       // LED ON/OFF state (1 = ON, 0 = OFF)
+    uint8_t brightness;  // LED brightness level (0 to 255)
+    uint32_t color;      // LED color in RGB format (e.g., 0xRRGGBB)
+} LEDSettings;
+
+LEDGroup :
+
+// Define LEDGroup structure
+typedef struct {
+    LEDSettings singleLED;  // Individual LED settings
+    uint8_t groupState;     // Group ON/OFF state (1 = ON, 0 = OFF)
+    uint8_t groupBrightness; // Group brightness level (0 to 255)
+} LEDGroup;
