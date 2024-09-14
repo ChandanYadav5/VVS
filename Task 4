@@ -11,3 +11,5 @@ void displayLEDGroupStatus(const LEDGroup *group) {
     printf("  Group State: %s\n", group->groupState ? "ON" : "OFF");
     printf("  Group Brightness: %d\n", group->groupBrightness);
 }
+
+
