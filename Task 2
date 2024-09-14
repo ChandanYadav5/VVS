@@ -1,0 +1,12 @@
+initLEDGroup :
+
+void initLEDGroup(LEDGroup *group) {
+    // Initialize individual LED settings
+    group->singleLED.state = 0;           // LED OFF
+    group->singleLED.brightness = 0;      // Minimum brightness
+    group->singleLED.color = 0x000000;    // Black (No color)
+    
+    // Initialize group settings
+    group->groupState = 0;                // Group OFF
+    group->groupBrightness = 0;           // Minimum brightness for the group
+}
