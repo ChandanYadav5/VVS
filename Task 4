@@ -1,0 +1,13 @@
+// Function to display LED group status
+void displayLEDGroupStatus(const LEDGroup *group) {
+    // Display individual LED settings
+    printf("Individual LED Status:\n");
+    printf("  State: %s\n", group->singleLED.state ? "ON" : "OFF");
+    printf("  Brightness: %d\n", group->singleLED.brightness);
+    printf("  Color: %#08X\n", group->singleLED.color);  // Display color in hexadecimal format
+    
+    // Display group settings
+    printf("Group LED Status:\n");
+    printf("  Group State: %s\n", group->groupState ? "ON" : "OFF");
+    printf("  Group Brightness: %d\n", group->groupBrightness);
+}
