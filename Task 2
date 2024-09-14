@@ -10,3 +10,5 @@ void initLEDGroup(LEDGroup *group) {
     group->groupState = 0;                // Group OFF
     group->groupBrightness = 0;           // Minimum brightness for the group
 }
+
+
