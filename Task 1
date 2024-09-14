@@ -1,5 +1,7 @@
 LEDSettings:
 
+#include<stdint.h>
+
 // Define LEDSettings structure
 typedef struct {
     uint8_t state;       // LED ON/OFF state (1 = ON, 0 = OFF)
